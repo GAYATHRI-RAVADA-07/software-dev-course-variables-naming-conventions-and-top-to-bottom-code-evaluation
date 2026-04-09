@@ -24,9 +24,14 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice";
+let itemCount = 5;
+let itemPrice = 4;
+let discount = 2;
 
-console.log(d);
+let totalCost = itemCount * itemPrice - discount;
+
+let purchaseSummary =
+  customerName + " bought " + itemCount + " items for $" + totalCost + ".";
+
+console.log(purchaseSummary);
